@@ -1,8 +1,8 @@
 body {
   color: #17202A;
   background-color:#FBFCFC;
-  /* font-family: 'Oxygen', sans-serif; */
-   font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', cursive, sans-serif;
+
 }
 
 /** HEADER **/
@@ -14,6 +14,10 @@ body {
 
 #header-nav .container {
   margin: 0;
+ }
+
+.navbar-header{
+  padding-left: 30px;
 }
 
 .navbar-brand { 
@@ -27,6 +31,7 @@ body {
   }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  margin: 10px 5px 5px 5px;
   border: 1px solid #17202A;
 }
 
@@ -55,7 +60,9 @@ body {
 #main-content {
   width: 95%;
   background-color: #919494;
+  margin-bottom: 30px;
 }
+
 #main-content-title {
   font-size: 25px;
   font-weight: bold;
@@ -63,4 +70,12 @@ body {
 /* END MAIN CONTENT */
 
 
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* MAIN CONTENT */
+  #main-content {
+    width: 70%;
+  }
+  /* END MAIN CONTENT */
+}
 
